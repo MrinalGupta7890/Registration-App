@@ -1,0 +1,124 @@
+body{
+    background: rgb(214, 212, 212);
+    text-align: center;
+  }
+  
+  .container{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  h1{
+    font-size: x-large;
+    text-align: center;
+    color: #4206a3;
+  }
+  
+  label{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  input[type="radio"]{
+    display: inline;
+    width: 10%;
+  }
+  
+  select{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea{
+    resize: none;
+    width: 98%;
+    min-height: 100px;
+    max-height: 150px;
+  }
+  
+  button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4206a3;
+    width: 40%;
+    font-size: 16px;
+  }
+  
+  button:hover{
+    background-color: #2b036c;
+  }
+
+  .password-checklist {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin-top: 5px;
+    font-size: 12px; /* Reduce font size */
+    text-align: left; /* Align text to the left */
+    color: #555; /* Default text color */
+  }
+  
+  .password-checklist li {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-checklist li::before {
+    content: "•"; /* Add a bullet point */
+    color: inherit;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-container input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+  }
+  
