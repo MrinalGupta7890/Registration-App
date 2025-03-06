@@ -1,74 +1,98 @@
-<<<<<<< HEAD
-# Registration-App
-=======
-# Getting Started with Create React App
+User Registration and Authentication System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Overview
 
-## Available Scripts
+This project is a User Registration and Authentication System built using React.js and Firebase. It allows users to register, login, and store user details securely. Password validation is enforced for security.
 
-In the project directory, you can run:
+🛠️ Tech Stack
 
-### `npm start`
+Frontend: React.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend & Authentication: Firebase Authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Database: Firestore (NoSQL database)
 
-### `npm test`
+UI Components: React Icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✨ Features
 
-### `npm run build`
+✅ User Registration:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Collects first name, last name, email, contact, gender, date of birth, graduation year, and course.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensures strong password validation (uppercase, lowercase, number, special character, min 8 chars).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ Login Authentication:
 
-### `npm run eject`
+Uses Firebase Authentication for secure login.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Redirects users upon successful login.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Firestore Database Storage:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Stores user details in Firestore (excluding passwords for security).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+✅ Password Visibility Toggle & Validation Checklist
 
-## Learn More
+Allows users to toggle password visibility.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Displays real-time password strength validation.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🚀 Installation & Setup
 
-### Code Splitting
+Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git clone https://github.com/your-repo-url.git
+cd your-project-folder
 
-### Analyzing the Bundle Size
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
+Set up Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create a Firebase project at Firebase Console.
 
-### Advanced Configuration
+Enable Authentication (Email & Password).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Enable Firestore Database.
 
-### Deployment
+Create a .env file and add Firebase credentials:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
 
-### `npm run build` fails to minify
+Run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 42a4511 (Initialize project using Create React App)
+npm start
+
+📂 Project Structure
+
+registration-app/
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md (to be created)
+└── src/
+    ├── App.css
+    ├── App.js
+    ├── index.css
+    ├── index.js
+    └── components/
+        ├── Dashboard.js
+        ├── Login.js
+        ├── Registration.css
+        ├── Registration.js
+        └── firebaseConfig.js
+
+🔥 Future Enhancements
+
+Implement forgot password functionality.
+
+Add user profile management.
+
+Enhance UI/UX with Tailwind CSS or Material UI.
